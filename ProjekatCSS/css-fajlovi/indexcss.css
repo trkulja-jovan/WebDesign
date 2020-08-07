@@ -1,0 +1,218 @@
+
+* {
+  font-family: Comic Sans MS;
+
+}
+body{
+  background-image: url("../slike/Italija.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  -webkit-animation: fadein 2s;
+}
+
+.menu {
+  margin-left: 6%;
+}
+
+ul{
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  list-style: none;
+  z-index: 10;
+}
+
+ul li {
+  float: left;
+  width: 250px;
+  height: 40px;
+  background-color: black;
+  line-height: 40px;
+  text-align: center;
+  color: #f2f2f2;
+  font-size: 16px;
+  border: solid;
+  border-style: 1px;
+}
+
+.kurs {
+  float: left;
+  width: 300px;
+  height: 40px;
+  background-color: black;
+  line-height: 40px;
+  text-align: center;
+  color: #f2f2f2;
+  font-size: 16px;
+}
+
+.vel {
+  float: left;
+  width: 160px;
+  height: 40px;
+  background-color: black;
+  line-height: 40px;
+  text-align: center;
+  color: #f2f2f2;
+  font-size: 16px;
+}
+
+ul.vel#1{
+  background-color: green;
+}
+
+.jez {
+  float: left;
+  width: 45px;
+  height: 40px;
+  background-color: black;
+  line-height: 40px;
+  text-align: center;
+  color: #f2f2f2;
+  font-size: 16px;
+}
+
+ul li a {
+  text-decoration: none;
+  color: white;
+  display: block;
+}
+
+ul li a:hover{
+  background-color: green;
+}
+
+ul li ul li {
+  display: none;
+  text-align: left;
+  width: 300px;
+  height: 40px;
+  background-color: black;
+  opacity: .8;
+  line-height: 40px;
+  text-align: center;
+  color: #f2f2f2;
+  font-size: 16px;
+  border-style: solid;
+
+}
+
+ul li:hover ul li {
+  display: block;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+
+.sticky + .row {
+  padding-top: 102px;
+}
+
+.slideshow {
+  width:99%;
+  height:300px;
+  border: 5px solid gray;
+  border-radius: 10px;
+  margin:0;
+  left:0;
+}
+
+.slideshow img {
+  -webkit-animation: fadein 3s;
+}
+
+#slideshow{
+  -webkit-transition: all .5s ease-in-out;
+  -moz-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+ width: 100%;
+ height: 100%;
+
+}
+
+.column {
+  float: left;
+  padding: 10px;
+  background-color: rgb(255, 255, 255, 0.7);
+}
+
+.column.side {
+  width: 25%;
+  -webkit-animation: fadein 2s;
+}
+
+.column.side h2 {
+  text-align: center;
+  color:red;
+}
+
+.column.side h3 {
+  text-align: center;
+  color:blue;
+}
+
+.column.side p{
+  text-align: justify;
+}
+
+.column.middle {
+  width: 43%;
+  margin: 5px;
+  -webkit-animation: fadein 4s;
+}
+
+.column.middle h2{
+  font-family: Comic Sans MS;
+  text-align: center;
+  color: blue;
+
+}
+
+.column.middle p{
+  font-family: Comic Sans MS;
+  text-align: justify;
+  color: black;
+}
+
+.column.middle img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.column.middle h3{
+  font-family: Tahoma;
+  text-align: center;
+  color:red;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.footer {
+    background-color: rgb(255, 255, 255, 0.7);
+    text-align: center;
+    border:solid;
+    border-spacing: 1;
+    border-color: black;
+    margin-top: 15px;
+}
+
+@media screen and (max-width: 600px) {
+  .column.side, .column.middle {
+    width: 100%;
+  }
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}

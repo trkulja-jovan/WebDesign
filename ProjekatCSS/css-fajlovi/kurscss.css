@@ -1,0 +1,224 @@
+* {
+  font-family: Comic Sans MS;
+}
+
+.menu{
+  margin-left: 6%; 
+}
+
+body { 
+  background-image: url("../slike/Italija.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  -webkit-animation: fadein 2s;
+}
+
+ul{
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  z-index: 10;
+}
+ 
+ul li {  
+  float: left;
+  width: 250px;
+  height: 40px;
+  background-color: black;
+  line-height: 40px;
+  text-align: center;
+  color: #f2f2f2;
+  font-size: 16px;
+  border: solid;
+  border-style: 1px;
+}
+
+.kurs {
+  float: left;
+  width: 300px;
+  height: 40px;
+  background-color: black;
+  line-height: 40px;
+  text-align: center;
+  color: #f2f2f2;
+  font-size: 16px;
+}
+
+.vel {
+  float: left;
+  width: 160px;
+  height: 40px;
+  background-color: black;
+  line-height: 40px;
+  text-align: center;
+  color: #f2f2f2;
+  font-size: 16px;
+}
+
+.jez {
+  float: left;
+  width: 45px;
+  height: 40px;
+  background-color: black;
+  line-height: 40px;
+  text-align: center;
+  color: #f2f2f2; 
+  font-size: 16px;
+}
+
+ul li a {
+  text-decoration: none;
+  color: white;
+  display: block;
+}
+
+ul li a:hover{
+  background-color: green;
+}
+
+ul li ul li {
+  display: none;
+  text-align: left;
+  width: 300px;
+  height: 40px;
+  background-color: black;
+  opacity: .8;
+  line-height: 40px;
+  text-align: center;
+  color: #f2f2f2;
+  font-size: 16px;
+  border-style: solid;
+}
+
+ul li:hover ul li {
+  display: block;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+
+.sticky + .row {
+  padding-top: 102px;
+}
+
+.footer {
+    background-color: rgb(255, 255, 255, 0.7);
+    text-align: center;
+    border:solid;
+    border-spacing: 1;
+    border-color: black;
+    margin-top: 15px;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@keyframes fadeout {
+    from { opacity: 1; }
+    to   { opacity: 0; }
+}
+
+img{
+    position: absolute;
+    width: 100px;
+    border-radius: 50%;
+}
+.loginbox{
+    position: absolute;
+    top: 50%;
+    right: -5%;
+    transform:translate(-50%,-50%);
+    width: 350px;
+    height:420px;
+    margin-top: 30px;
+    padding: 80px 40px;
+    box-sizing: border-box;
+    background: rgba(0,0,0,.5);
+}
+.user{
+    height: 100px;
+    overflow: hidden;
+    position: absolute;
+    top:calc(-100px/2);
+    left:calc(50% - 50px);
+}
+h2{
+    margin:0;
+    padding: 0 0 20px;
+    color:#00cc00;
+    text-shadow:1px 1px 1px #262626;
+    text-align:center;
+    letter-spacing: 1px;
+}
+.loginbox p{
+    margin:0;
+    padding: 0;
+    font-weight: bold;
+    color: #fff
+}
+.loginbox input{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.loginbox input[type="text"],
+.loginbox input[type="password"]{
+    border:none;
+    border-bottom: 1px solid #fff;
+    background-color: transparent;
+    outline: none;
+    height: 40px;
+    color:#fff;
+    font-size: 16px
+}
+::placeholder{
+    color: rgba(255,255,255,.5)
+}
+.loginbox input[type="submit"]{
+    border:none;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+    background:#ff5c33;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: .5s;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.loginbox input[type="submit"]:hover{
+    background:#00cc00;
+    color: #262626
+}
+.loginbox a{
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    opacity: .8
+}
+
+.opis {
+  float: left;
+  width: 50%;
+}
+
+.opis {
+  background-color: rgb(255, 255, 255, 0.6);
+  border-style: solid;
+  position: relative;
+  top: 80px;
+  z-index: -1;
+  margin: 10px;
+}
+
+.opis p {
+  text-align: justify;
+  text-color: black;
+  padding: 15px;
+}

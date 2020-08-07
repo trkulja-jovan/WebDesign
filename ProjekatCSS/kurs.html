@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="sr">
+  <head>
+    <meta charset="utf-8">
+     <link rel="stylesheet" type="text/css" href="css-fajlovi/kurscss.css">
+     <link rel="icon" type="image/png" href="slike/italia.png">
+	<title>Italijanski jezik</title>
+</head>
+<body>
+	<div class="menu" id="mymenu">
+	<ul>
+		<li class="vel"><a href="index.html">POČETNA</a></li>
+		<li class="vel"><a href="onama.html">O NAMA</a></li>
+		<li><a href="italijanski.html">ITALIJANSKI JEZIK</a></li>
+		<li id="1" class="kurs"><a href="kurs.html">KURS ITALIJANSKOG JEZIKA</a>
+		<ul>
+			<li><a href="a.html">A NIVO</a></li>
+			<li><a href="b.html">B NIVO</a></li>
+			<li><a href="c.html">C NIVO</a></li>
+		</ul>
+		<li class="vel"><a href="kontakt.html">KONTAKT</a></li>
+		<li class="jez"><a href="index.html">SR</a></li>
+		<li class="jez"><a href="index.html">IT</a></li>
+	</ul>
+	</div>
+
+	<div class="opis">
+		<p>
+			Poštovani učenici i profesori. <br>
+			Pustili smo u rad beta verziju sajta, gde Vam je sada omogućeno da izvršite prijavu na sistem putem korisničkog imena i lozinke. Ove podatke dobijate u školi prilikom registracije na sistem. Prednosti ovog sistema su što ćemo ubuduće sve materijale sa predavanja kačiti na ovaj sajt.
+		</p>
+	</div>
+
+	<div class="opis">
+		<p>
+			Ukoliko ste zaboravili korisničko ime možete uraditi neku od sledećih stvari: <br>
+			<ol type="1">
+				<li>Forma korisničkog imena je sledeća: prvih 7 cifara su zapravo cifre Vašeg JMBG - a, nakon toga idu inicijali i posle nivo jezika koji izučavate. Primer: <mark>1234567jtA</mark></li>
+				<li>Kontaktirati nas putem <a href="kontakt.html">ovog linka</a> i dobiti novo korisničko ime.</li>
+				<li>Ili u direktno u školi u administraciji, gde ćete dobiti novo korisničko ime.
+			</ol>
+		</p>
+	</div>
+
+	<div class="loginbox">
+        <img src="slike/avatar.jpg" class="user">
+        <h2>Prijava na sistem</h2>
+        <form action="index.html">
+            <p>Korisničko ime</p>
+            <input type="text" name="" placeholder="Unesite korisničko ime">
+            <p>Lozinka</p>
+        	<input type="password" name="" placeholder="*******">
+        	<input type="submit" name="" value="Prijavite se">
+        	<a href="index.html">Zaboravljena lozinka</a>
+        </form>
+    </div>
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("mymenu");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
+
+</body>
+</html>

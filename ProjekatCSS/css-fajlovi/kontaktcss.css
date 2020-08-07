@@ -1,0 +1,171 @@
+* {
+  font-family: Comic Sans MS;
+}
+
+.menu{
+  margin-left: 6%; 
+}
+
+body {
+  background-image: url("../slike/Italija.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  -webkit-animation: fadein 2s;
+}
+
+ul{
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  z-index: 10;
+}
+
+ul li {
+  float: left;
+  width: 250px;
+  height: 40px;
+  background-color: black;
+  line-height: 40px;
+  text-align: center;
+  color: #f2f2f2;
+  font-size: 16px;
+  border: solid;
+  border-style: 1px;
+}
+
+.kurs {
+  float: left;
+  width: 300px;
+  height: 40px;
+  background-color: black;
+  line-height: 40px;
+  text-align: center;
+  color: #f2f2f2;
+  font-size: 16px;
+}
+
+.vel {
+  float: left;
+  width: 160px;
+  height: 40px;
+  background-color: black;
+  line-height: 40px;
+  text-align: center;
+  color: #f2f2f2;
+  font-size: 16px;
+}
+
+.jez {
+  float: left;
+  width: 45px;
+  height: 40px;
+  background-color: black;
+  line-height: 40px;
+  text-align: center;
+  color: #f2f2f2;
+  font-size: 16px;
+}
+
+ul li a {
+  text-decoration: none;
+  color: white;
+  display: block;
+}
+
+ul li a:hover{
+  background-color: green;
+}
+
+ul li ul li {
+  display: none;
+  text-align: left;
+  width: 300px;
+  height: 40px;
+  background-color: black;
+  opacity: .8;
+  line-height: 40px;
+  text-align: center;
+  color: #f2f2f2;
+  font-size: 16px;
+  border-style: solid;
+}
+
+ul li:hover ul li {
+  display: block;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+
+.sticky + .row {
+  padding-top: 102px;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@keyframes fadeout {
+    from { opacity: 1; }
+    to   { opacity: 0; }
+}
+
+#nas {
+  width:100%;
+  height:250px;
+  margin-bottom: 40px;
+}
+
+h2 {
+  color:yellow;
+  background-color: blue;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.levi {
+  float: left;
+  width: 50%;
+}
+
+.levi,form,h3{
+  text-align: center;
+  color: yellow;
+}
+
+.desni {
+  float: right;
+  width: 45%;
+}
+
+.desni p{
+  text-align: center;
+  background-color: green;
+  color:white;
+}
+
+.desni fieldset{
+  border-color: black;
+  background-color: white;
+}
+
+.desni fieldset h4{
+  color:black;
+  text-align: center;
+}
+
+.desni a img{
+  position: relative;
+  left: 43%;
+}
+
+.desni img {
+  position: relative;
+  left: 10%;
+  margin-top: 10px;
+}

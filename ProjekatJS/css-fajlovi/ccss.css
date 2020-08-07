@@ -1,0 +1,318 @@
+* {
+  font-family: Comic Sans MS;
+}
+
+
+body { 
+  background-image: url("../slike/Italija.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  -webkit-animation: fadein 2s;
+}
+
+.menu {
+  margin-left: 6%;
+}
+
+ul{
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  z-index: 10;
+}
+ 
+ul li {  
+  float: left;
+  width: 250px;
+  height: 40px;
+  background-color: black;
+  line-height: 40px;
+  text-align: center;
+  color: #f2f2f2;
+  font-size: 16px;
+  border: solid;
+  border-style: 1px;
+}
+
+.kurs {
+  float: left;
+  width: 300px;
+  height: 40px;
+  background-color: black;
+  line-height: 40px;
+  text-align: center;
+  color: #f2f2f2;
+  font-size: 16px;
+}
+
+.vel {
+  float: left;
+  width: 160px;
+  height: 40px;
+  background-color: black;
+  line-height: 40px;
+  text-align: center;
+  color: #f2f2f2;
+  font-size: 16px;
+}
+
+.jez {
+  float: left;
+  width: 45px;
+  height: 40px;
+  background-color: black;
+  line-height: 40px;
+  text-align: center;
+  color: #f2f2f2; 
+  font-size: 16px;
+}
+
+ul li a {
+  text-decoration: none;
+  color: white;
+  display: block;
+}
+
+ul li a:hover{
+  background-color: green;
+}
+
+ul li ul li {
+  display: none;
+  text-align: left;
+  width: 300px;
+  height: 40px;
+  background-color: black;
+  opacity: .8;
+  line-height: 40px;
+  text-align: center;
+  color: #f2f2f2;
+  font-size: 16px;
+  border-style: solid;
+}
+
+ul li:hover ul li {
+  display: block;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+
+.sticky + .row {
+  padding-top: 102px;
+}
+
+.footer {
+    background-color: rgb(255, 255, 255, 0.7);
+    text-align: center;
+    border:solid;
+    border-spacing: 1;
+    border-color: black;
+    margin-top: 120px;
+
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@keyframes fadeout {
+    from { opacity: 1; }
+    to   { opacity: 0; }
+}
+
+.naslov{
+  text-align: center;
+  position: relative;
+  top: 40px;
+  margin-bottom: 10px;
+  font-size: 25px;
+  width: 100%;
+  height: 150px;
+  color:white;
+  animation-name: boje;
+  animation-duration: 5s;
+  animation-delay: -1s;
+  animation-iteration-count: infinite;
+  text-shadow: 2px 2px white;
+  z-index: -10;
+}
+
+@keyframes boje {
+  0% {color: white;
+      text-shadow: 2px 2px black;}
+  25% {color: #d85454;
+  text-shadow: 2px 2px yellow;}
+  50% {color: yellow;
+    text-shadow: 2px 2px red;}
+  75% {color: #4bed89;}
+  100% {color: white;
+  text-shadow: 2px 2px black;}
+
+}
+
+.opis {
+  border-style: solid;
+  border-color: green;
+  color:white;
+  float: left;
+  width: 45%;
+  height: 350px;
+  left: 0px;
+  top: 20px;
+  z-index: -10;
+  border-radius: 25px;
+  margin-top: 20px;
+}
+
+.opis h2 {
+  text-align: center;
+  color: yellow;
+}
+
+.opis p {
+  text-align: justify;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.opis2 {
+  border-style: solid;
+  border-color: green;
+  color:white;
+  float: right;
+  width: 45%;
+  height: 350px;
+  right: 0px;
+  top: 20px;
+  z-index: -10;
+  border-radius: 25px;
+  margin-top: 20px;
+}
+
+.opis2 h2 {
+  text-align: center;
+  color: yellow;
+}
+
+.opis2 p {
+  text-align: justify;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.flip-box {
+  background-color: transparent;
+  width: 45%;
+  height: 330px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px;
+  position: relative;
+  top: 400px;
+  border-radius: 25px;
+}
+
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  border-radius: 25px;
+}
+
+.flip-box-inner ol{
+  text-align: left;
+}
+
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+  border-radius: 25px;
+}
+
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 25px;
+}
+
+.flip-box-front {
+  background-color: #bbb;
+  color: black;
+  border-radius: 25px;
+}
+
+.flip-box-back {
+  background-color: dodgerblue;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+.flip-box-front h2 {
+  font-size: 30px;
+  padding: 100px;
+}
+
+.flip-box2 {
+  background-color: transparent;
+  width: 45%;
+  height: 330px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px;
+  position: relative;
+  top: 70px;
+  left: 55%;
+  border-radius: 25px;
+}
+
+.flip-box-inner2 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  border-radius: 25px;
+}
+
+.flip-box-inner2 ol{
+  text-align: left;
+}
+
+.flip-box2:hover .flip-box-inner2 {
+  transform: rotateY(180deg);
+  border-radius: 25px;
+}
+
+.flip-box-front2, .flip-box-back2 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 25px;
+}
+
+.flip-box-front2 {
+  background-color: #bbb;
+  color: black;
+  border-radius: 25px;
+}
+
+.flip-box-back2 {
+  background-color: dodgerblue;
+  color: white;
+  font-size: 18px;
+  transform: rotateY(180deg);
+}
+
+.flip-box-front2 h2 {
+  font-size: 30px;
+  padding: 100px;
+}

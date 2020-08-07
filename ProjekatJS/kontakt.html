@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="sr">
+  <head>
+  <meta charset="utf-8">
+	<title>Italijanski jezik</title>
+	<link rel="stylesheet" type="text/css" href="css-fajlovi/kontaktcss.css">
+	<link rel="icon" type="image/png" href="slike/italia.png">
+	<script src="script-fajlovi/kontaktjs.js"></script>
+</head>
+
+<body>
+    <div class="menu" id="mymenu">
+	   <ul>
+		  <li class="vel" id="1"><a href="index.html">POČETNA</a></li>
+		  <li class="vel"><a href="onama.html">O NAMA</a></li>
+		  <li><a href="italijanski.html">ITALIJANSKI JEZIK</a></li>
+		  <li class="kurs"><a href="kurs.html">KURS ITALIJANSKOG JEZIKA</a>
+		  <ul>
+			 <li><a href="a.html">A NIVO</a></li>
+			 <li><a href="b.html">B NIVO</a></li>
+			 <li><a href="c.html">C NIVO</a></li>
+		  </ul>
+		  <li class="vel"><a href="kontakt.html">KONTAKT</a></li>
+		  <li class="jez"><a href="index.html">SR</a></li>
+		  <li class="jez"><a href="index.html">IT</a></li>
+	   </ul>
+  	</div>
+	<pre><br><br><br><br><br><br><br></pre>
+
+	<img id="nas" src="slike/contattaci.png">
+
+	<h2>
+		Kontaktirajte nas za više informacija. Zamolićemo Vas da nam ostavite nekoliko ličnih podataka. <br>
+	</h2>
+
+	<div class="levi">
+		<form class="forma" name="forma" onsubmit="return sve()" action="upis.html"> <fieldset style="border-color: yellow;"> <legend style="color: white">Kontakt forma</legend>
+		<b><h3 id="txt1in">Ime i prezime (obavezno):</b></h3>
+		<input type="text" name="txt1" size="30" oninput="inputTekst()" oninvalid="ispis()" required> <br><br>
+    	<b><h3 id="txt2in">E - mail adresa (obavezno):</b></h3>
+    <input type="text" name="txt2" size="30" placeholder="example@adress.com" oninput="inputTekst1()" oninvalid="ispis()" required></pre><br><br>
+		<b><h3 id="txt3in">Tema poruke:</b></h3>
+    	<input type="text" name="txt3" size="30" oninput="inputTekst2()" oninvalid="ispis()" required><br><br>
+    	<b><h3 id="txt4in">Mobilni telefon:</h3></b>
+		<input type="text" name="txt4" size="15" placeholder="06X" oninput="inputTekst3()"></pre><br><br>
+		<b><h3 id="txt5in">Adresa (unesite adresu u formatu Ulica - broj):</h3></b>
+		<input type="text" name="txt5" size="15" placeholder="Ulica - broj" oninput="inputTekst4()"></pre><br><br>
+		<textarea name="txtarea" placeholder="Ostavite ovde Vašu poruku" rows="13" cols="81"></textarea> <br>
+		<div style="text-align:center;">
+    		<input type="submit" name="btn" value="Pošalji" style="height:30px; width:90px">
+    		<input type="reset" name="reset" value="Poništi unos" style="height:30px; width:90px">
+		</div>
+		</fieldset> </form>
+	</div>
+
+	<div class="desni">
+		<p><b>Ostale kontakt informacije:</b><br></p>
+		<fieldset>
+			<h4><b><i><mark>Centar za učenje italijanskog jezika</mark></i></b></h4>
+			<h4>Adresa: Bulevar Oslobođenja 30, Novi Sad</h4>
+			<h4>Telefon: +381 62 785 123</h4>
+			<h4>E - mail: <a href="mailto:skolaitalijanskog@gmail.com">skolaitalijanskog@gmail.com</a></h4><br>
+			<h4><mark>Radno vreme: svaki radni dan od 8h - 22h</mark></h4><br>
+			<h4>Pratite nas i na društvenim mrežama:</h4>
+			<a href="https://www.facebook.com"><img src="slike/facebook.png" width="25px" alt="facebook"height="25px" ></a>
+			<a href="https://www.instagram.com"><img src="slike/instagram.png" width="25px" alt="insta"height="25px"></a>
+      		<a href="https://www.twitter.com"><img src="slike/twitter.png" width="25px" alt="insta"height="25px"></a>
+      		<h5 style="text-align:center"><i>Copyright: Jovan Trkulja</i></h5>
+    	</fieldset>
+    	<img src="slike/spageti.png">
+	</div>
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("mymenu");
+var sticky = header.offsetTop;
+
+function myFunction() {
+if (window.pageYOffset > sticky) {
+  header.classList.add("sticky");
+} else {
+  header.classList.remove("sticky");
+}
+}
+</script>
+</body>
+</html>

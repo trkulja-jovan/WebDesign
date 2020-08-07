@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="sr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css-fajlovi/italijanski.css">
+    <link rel="icon" type="image/png" href="slike/italia.png">
+	<title>Italijanski jezik</title>
+</head>
+
+<style>
+  .italiano {
+    float: left;
+    width: 50%;
+  }
+
+  .italiano img {
+    width: 50%;
+    height: 200px;
+    margin-left: 30%;
+  }
+
+  .italia {
+    float: right;
+    width: 50%;
+  }
+
+  .italia img{
+    width: 50%;
+    height: 250px;
+    margin-left: 30%;
+  }
+</style>
+
+<body>
+	<div class="menu" id="mymenu">
+     <ul>
+      <li class="vel" id="1"><a href="index.html">POČETNA</a></li>
+      <li class="vel"><a href="onama.html">O NAMA</a></li>
+      <li><a href="italijanski.html">ITALIJANSKI JEZIK</a></li>
+      <li class="kurs"><a href="kurs.html">KURS ITALIJANSKOG JEZIKA</a>
+      <ul>
+       <li><a href="a.html">A NIVO</a></li>
+       <li><a href="b.html">B NIVO</a></li>
+       <li><a href="c.html">C NIVO</a></li>
+      </ul>
+      <li class="vel"><a href="kontakt.html">KONTAKT</a></li>
+      <li class="jez"><a href="index.html">SR</a></li>
+      <li class="jez"><a href="index.html">IT</a></li>
+     </ul>
+    </div>
+	<pre><br><br><br></pre>
+
+	<div class="tekstgore">
+		<h1>LINGUA ITALIANA - Italijanski jezik</h1>
+	</div>
+
+
+  <div class="italiano">
+    <a href="https://sr.wikipedia.org/sr-ec/Италијански_језик" target="_blank">
+  		<img src="slike/slika.jpg">
+    </a>
+  </div>
+
+  <div class="italia">
+    <a href="https://sr.wikipedia.org/wiki/Италија" target="_blank">
+  		<img src="slike/italia.png">
+    </a>
+  </div>
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("mymenu");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
+</body>
+</html>

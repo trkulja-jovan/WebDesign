@@ -1,0 +1,127 @@
+* {
+  font-family: Comic Sans MS;
+}
+
+body {
+  background-image: url("../slike/Italija.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  -webkit-animation: fadein 2s;
+}
+
+.menu {
+  margin-left: 6%;
+}
+
+ul{
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+ul li {
+  float: left;
+  width: 250px;
+  height: 40px;
+  background-color: black;
+  line-height: 40px;
+  text-align: center;
+  color: #f2f2f2;
+  font-size: 16px;
+  border: solid;
+  border-style: 1px;
+}
+
+.kurs {
+  float: left;
+  width: 300px;
+  height: 40px;
+  background-color: black;
+  line-height: 40px;
+  text-align: center;
+  color: #f2f2f2;
+  font-size: 16px;
+}
+
+.vel {
+  float: left;
+  width: 160px;
+  height: 40px;
+  background-color: black;
+  line-height: 40px;
+  text-align: center;
+  color: #f2f2f2;
+  font-size: 16px;
+}
+
+ul#1{
+  background-color: green;
+}
+
+.jez {
+  float: left;
+  width: 45px;
+  height: 40px;
+  background-color: black;
+  line-height: 40px;
+  text-align: center;
+  color: #f2f2f2;
+  font-size: 16px;
+}
+
+ul li a {
+  text-decoration: none;
+  color: white;
+  display: block;
+}
+
+ul li a:hover{
+  background-color: green;
+}
+
+ul li ul li {
+  display: none;
+  text-align: left;
+  width: 300px;
+  height: 40px;
+  background-color: black;
+  opacity: .8;
+  line-height: 40px;
+  text-align: center;
+  color: #f2f2f2;
+  font-size: 16px;
+  border-style: solid;
+}
+
+ul li:hover ul li {
+  display: block;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+
+.sticky + .row {
+  padding-top: 102px;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@keyframes fadeout {
+    from { opacity: 1; }
+    to   { opacity: 0; }
+}
+
+.tekstgore{
+  text-align: center;
+  font-size: 30px;
+  width: 100%;
+  height: 150px;
+  color:white;
+  text-shadow: 2px 2px red;
+}
